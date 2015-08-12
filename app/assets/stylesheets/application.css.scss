@@ -13,3 +13,21 @@
  *= require_tree .
  *= require_self
  */
+	@import "bootstrap-sprockets";
+	@import "bootstrap";
+
+.song-list{
+	overflow: hidden;
+  white-space: nowrap;
+  
+
+}
+
+.attribute-type{
+	/*float: left;*/
+}
+
+#search-center{
+	width: 50%;
+    margin: 0 auto;
+}

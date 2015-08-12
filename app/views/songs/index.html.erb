@@ -1,18 +1,9 @@
-<h1>Songs#index</h1>
-
-<%= form_tag songs_path, method: :get do %>
-	<p>
-		<%= text_field_tag :query, params[:query] %>
-		<%= submit_tag "Search", name: :nil %>
-	</p>
-<% end %>
-
 <% @songs.each do |song| %>
 	<ul>
-		<li>
-  		Song: <%= song.title %> 
-  		Album: <%= song.album %> 
-  		Artist: <%= song.artist %>
-		</li>
+		<!-- <li> -->
+	  		<strong>Song:</strong> <%= song.title %>
+	  		<strong>Album:</strong> <%= song.album %> 
+	  		<strong>Artist:</strong> <%= song.artist %>
+		<!-- </li> -->
 	</ul>
 <% end %>
