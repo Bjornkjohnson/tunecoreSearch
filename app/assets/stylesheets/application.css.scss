@@ -15,8 +15,14 @@
  */
 	@import "bootstrap-sprockets";
 	@import "bootstrap";
-col{
-	width: 200px;
+
+.logo{
+	height: 30px;
+	margin: 0 auto;
+}
+
+.navbar-default{
+	background: #333;
 }
 
 .song-list{
