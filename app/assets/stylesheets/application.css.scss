@@ -17,8 +17,12 @@
 	@import "bootstrap";
 
 .logo{
-	height: 30px;
-	margin: 0 auto;
+	    height: 45px;
+    padding-bottom: 10px;
+}
+
+.navbar-brand{
+	padding: 10px;
 }
 
 .navbar-default{
