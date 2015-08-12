@@ -1,4 +1,6 @@
 class Song < ActiveRecord::Base
+	validates :title, :album, :artist, presence: true
+
 	def self.text_search(query)
 		if query.present?
 			query = query.split(" ").join(" | ")
