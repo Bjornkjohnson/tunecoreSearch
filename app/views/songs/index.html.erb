@@ -1,9 +1,22 @@
-<% @songs.each do |song| %>
-	<ul>
-		<!-- <li> -->
-	  		<strong>Song:</strong> <%= song.title %>
-	  		<strong>Album:</strong> <%= song.album %> 
-	  		<strong>Artist:</strong> <%= song.artist %>
-		<!-- </li> -->
-	</ul>
-<% end %>
+<div class="container">
+  <h2>Songs</h2>
+             
+  <table class="table">
+    <thead>
+      <tr>
+        <th>Song Title</th>
+        <th>Album</th>
+        <th>Artist</th>
+      </tr>
+    </thead>
+    <tbody>
+      <% @songs.each do |song| %>
+			<tr>
+	  		<td><%= song.title %></td>
+	  		<td><%= song.album %> </td>
+	  		<td><%= song.artist %></td>
+			</tr>
+		<% end %>
+    </tbody>
+  </table>
+</div>
