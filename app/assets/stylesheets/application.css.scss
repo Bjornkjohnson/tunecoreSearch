@@ -16,6 +16,12 @@
 	@import "bootstrap-sprockets";
 	@import "bootstrap";
 
+.navbar {
+    box-shadow: 0 5px 5px rgba(0,0,0,.15);
+		margin-bottom: 20px;
+
+    /* the rest of your styling */
+}
 .logo{
 	    height: 45px;
     padding-bottom: 10px;

@@ -8,7 +8,7 @@ class Song < ActiveRecord::Base
 			where("title @@ to_tsquery(:q) or album @@ to_tsquery(:q) or artist @@ to_tsquery(:q)", q: query)
 			#where(":q @@ title or :q @@ album or :q @@ artist ", q: query)
 		else
-			none
+			all
 		end
 	end
 end

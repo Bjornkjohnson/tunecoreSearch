@@ -5,11 +5,15 @@
 #
 #   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
 #   Mayor.create(name: 'Emanuel', city: cities.first)
-Song.create!(title:  "Example User",
-             album: "example@railstutorial.org",
-             artist:              "foobar")
+Song.create!(title:  	"Sympathy for the Devil",
+             album: 	"Beggars Banquet",
+             artist: 	"The Rolling Stones")
 
-99.times do |n|
+Song.create!(title:  	"Rip This Joint",
+             album: 	"Exile on Main Street",
+             artist: 	"The Rolling Stones")
+
+499.times do |n|
   title  = "title-#{n+1}"
   album = "album-#{n+1}"
   artist = "artist-#{n+1}"
