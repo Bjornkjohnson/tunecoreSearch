@@ -1,28 +1,28 @@
 == README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Setup
 
-Things you may want to cover:
+$ bundle install
+$ rake db:create
+$ rake db:migrate
+$ rake db:seed
 
-* Ruby version
+Seeding takes about 30 seconds due to fetching from spotify api
 
-* System dependencies
+TuneCore Album Index
+We distribute many songs and albums to iTunes and need a search interface for customer service. Can you design and implement a Rails app for a search interface for customer service to search our song database by any combination of song title, album title, and artist name?
 
-* Configuration
+Minimum Requirements
 
-* Database creation
+* 500 songs, 100 albums, 10 artists
+* Responsive user interface
+* Return a list of songs with album and artist info
+* Avoid use of a off-the-shelf search libraries and platforms 
+* Tests
 
-* Database initialization
+Open ended question we can talk about when you’re here: What if we had 100 million songs. How might you deal with this kind of search?
 
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+* Would use Sunspot to take the load off the app server.
 
 
-Please feel free to use a different markup language if you do not plan to run
-<tt>rake doc:app</tt>.
+Feel free to install gems. You should use bundler. Please upload the finished code to Github so we can review it.
