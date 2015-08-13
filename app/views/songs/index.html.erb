@@ -1,6 +1,6 @@
 <div class="container">
   <h2>Songs</h2>
-             
+  <%= will_paginate @songs, renderer: BootstrapPagination::Rails %> 
   <table class="table">
     <thead>
       <tr>
