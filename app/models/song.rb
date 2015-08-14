@@ -9,7 +9,7 @@ class Song < ActiveRecord::Base
 				ts_rank(to_tsvector(album), to_tsquery(#{sanitize(query)})) +
 				ts_rank(to_tsvector(artist), to_tsquery(#{sanitize(query)}))
 			RANK
-			k
+			
 			
 			#to_tsquery(temp)query
 			where("title @@ to_tsquery(:q) or album @@ to_tsquery(:q) or artist @@ to_tsquery(:q)", q: query).order("#{rank} DESC")
